@@ -672,11 +672,47 @@ span{
     }
 }
 @media (max-width: 768px) {
-    .navbar a {
-        font-size: 1.5rem;
-        margin-left: 2rem;
+    .header {
+        padding: 2rem 5%;
     }
+    
+    .navbar {
+        display: none; /* Menu default tidak muncul di layar kecil */
+    }
+
+    #menu-icon {
+        display: block; /* Menu burger muncul di layar kecil */
+    }
+
+    .home {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 4rem;
+    }
+
+    .home-img img {
+        width: 50%;
+    }
+
+    .text-animation {
+        font-size: 24px;
+    }
+
+    .experience-box {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .timeline-items {
+        flex-direction: column;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding: 0;
+        text-align: left;
     }
 }
